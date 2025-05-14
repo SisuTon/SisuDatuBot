@@ -5,7 +5,7 @@ from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 from config.settings import BOT_TOKEN
 from database.models import init_db
-from handlers import user, admin
+from handlers import user, admin, sisu
 
 # Configure logging
 logging.basicConfig(
@@ -27,6 +27,7 @@ dp = Dispatcher()
 # Register routers
 dp.include_router(admin.router)
 dp.include_router(user.router)
+dp.include_router(sisu.router)
 
 async def main():
     # Initialize database
