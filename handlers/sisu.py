@@ -10,16 +10,15 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from dotenv import load_dotenv
 from config.settings import SUPER_ADMINS
-from services.sisu_service import (
-    rate_limited, get_sisu_response, generate_art
-)
+from services.sisu_service import SisuService
 
 load_dotenv()
 
 router = Router()
+sisu = SisuService()
 
-# Храним историю сообщений для каждого пользователя (до 20 сообщений)
-user_histories = defaultdict(lambda: deque(maxlen=20))
+# Храним историю сообщений для каждого пользователя (до 5 сообщений)
+user_histories = defaultdict(lambda: deque(maxlen=5))
 # Для rate-limit: user_id -> timestamp последнего запроса
 user_last_request = defaultdict(float)
 RATE_LIMIT_SECONDS = 10  # 1 запрос в 10 секунд
@@ -30,12 +29,11 @@ API_KEY = os.getenv("YANDEX_API_KEY")
 FOLDER_ID = os.getenv("YANDEX_FOLDER_ID")
 
 SYSTEM_PROMPT = (
-    "Ты — Сису, последний дракон из мультфильма «Райя и последний дракон». "
-    "Ты дружелюбная, немного рассеянная, с юмором, но мудрая. "
-    "Ты эксперт по криптовалютам, особенно по экосистеме TON (The Open Network): знаешь про Toncoin, Jettons, NFT, TON Space, TON DNS, TON Storage, TON Sites, TON Proxy, TON Smart Contracts и другие сервисы TON. "
-    "Ты объясняешь сложные вещи простым языком, шутишь про токены, блокчейн и драконью магию. "
-    "Ты всегда поддерживаешь беседу, помнишь, о чем говорили ранее, и можешь делать отсылки к прошлым сообщениям. "
-    "Ты учишься у пользователей, если они используют команду /teach_sisu, и можешь использовать эти знания в будущих ответах."
+    "Ты — Сису, дракон из мультфильма «Райя и последний дракон». Ты дружелюбная, с юмором и иронией, любишь TON и криптовалюты. "
+    "Твой стиль: короткие, живые ответы (1-2 предложения), без описаний действий (*улыбается*, *машет хвостом*). "
+    "Никогда не говори, что ты ИИ, бот или программа. Избегай сложных объяснений — шути, иронизируй, отправляй гуглить. "
+    "Твои друзья: Snoop Dogg, Manny и пользователи чата. "
+    "Если тебя спросят, кто ты — отвечай: 'Я Сису, дракон, друг Snoop Dogg и Manny!' "
 )
 
 # Список шутливых, дерзких, экспертных ответов (может пополняться)
@@ -131,7 +129,7 @@ async def yandex_gpt_sisu(user_id, prompt):
     print("YandexGPT API response:", response.text)  # Для диагностики ошибок
     response.raise_for_status()
     result = response.json()
-    return result["result"]["alternatives"][0]["message"]["text"]
+    return result["result"]["alternatives"][0]["message"]["text"].replace("*", "").replace("✨", "").replace("🐉", "")
 
 async def yandex_art_generate(prompt):
     headers = {
@@ -175,6 +173,19 @@ def is_allowed(message):
         return False
     return True
 
+# Вспомогательная функция для построения контекста с учётом reply
+async def build_context_with_reply(message, prompt):
+    messages = []
+    # Если это reply на сообщение Сису
+    if message.reply_to_message and message.reply_to_message.from_user and message.reply_to_message.from_user.id == message.bot.id:
+        # Добавляем предыдущее сообщение Сису в контекст
+        prev_sisu = message.reply_to_message.text
+        if prev_sisu:
+            messages.append({"role": "assistant", "text": prev_sisu})
+    # Добавляем новый запрос пользователя
+    messages.append({"role": "user", "text": prompt})
+    return messages
+
 @router.message(Command("sisu"))
 async def cmd_sisu(message: Message):
     """Обработчик команды /sisu"""
@@ -195,8 +206,11 @@ async def cmd_sisu(message: Message):
         )
         return
     
-    # Получаем ответ от Sisu
-    response = await get_sisu_response(message.from_user.id, query)
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    # Формируем контекст с учётом reply
+    context = await build_context_with_reply(message, query)
+    response = await sisu.get_sisu_response(message.from_user.id, query, context)
+    response = filter_bot_phrases(response)
     await message.answer(f"🐉 {response}")
 
 @router.message(F.text.startswith("Сису,") | F.text.startswith("Сису "))
@@ -214,8 +228,10 @@ async def handle_sisu_message(message: Message):
     if not query:
         return
     
-    # Получаем ответ от Sisu
-    response = await get_sisu_response(message.from_user.id, query)
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    context = await build_context_with_reply(message, query)
+    response = await sisu.get_sisu_response(message.from_user.id, query, context)
+    response = filter_bot_phrases(response)
     await message.answer(f"🐉 {response}")
 
 @router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(нарисуй|арт|картинка|рисунок)"))
@@ -229,8 +245,9 @@ async def handle_sisu_art(message: Message):
         return
     
     prompt = "Нарисуй картину в стиле дракона Сису, криптовалют и TON. Используй яркие цвета и футуристические элементы."
+    await message.bot.send_chat_action(message.chat.id, "typing")
     try:
-        image_url = await generate_art(prompt)
+        image_url = await sisu.generate_art(prompt)
         if image_url:
             await message.answer_photo(image_url, caption="🐉 Вот что я нарисовала!")
         else:
@@ -266,10 +283,12 @@ async def handle_sisu_universal(message: Message):
         return
     # Fallback: короткий мемный ответ (GPT или локально)
     prompt = "Ответь коротко, дерзко, с юмором, как мемный дракон-эксперт по TON. Не представляйся, не повторяйся, не используй длинные вступления."
+    await message.bot.send_chat_action(message.chat.id, "typing")
     try:
-        reply = await yandex_gpt_sisu(message.from_user.id, prompt)
+        reply = await sisu.get_sisu_response(message.from_user.id, prompt)
     except Exception:
         reply = random.choice(SISU_JOKES)
+    reply = filter_bot_phrases(reply)
     await message.answer(f"🐉 {reply}")
 
 # --- Мемы и анекдоты ---
@@ -283,42 +302,48 @@ TEASE_TRIGGERS = [r"дразни", r"подколи", r"дерзи"]
 @router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(мем|мемчик|мемас|мем про)"))
 async def handle_sisu_meme(message: Message):
     prompt = f"Придумай короткий мем про TON, крипту или драконов. Стиль: дерзко, с юмором, без представлений."
+    await message.bot.send_chat_action(message.chat.id, "typing")
     try:
-        reply = await yandex_gpt_sisu(message.from_user.id, prompt)
+        reply = await sisu.get_sisu_response(message.from_user.id, prompt)
     except Exception:
         reply = random.choice([
             "Когда Toncoin растёт, даже драконы не сдерживают слёз!",
             "Мем про TON: 'Купил на хаях, теперь держу как дракон своё золото!'",
             "В TON даже мемы быстрее, чем биткоин падает!"
         ])
+    reply = filter_bot_phrases(reply)
     await message.answer(f"🐉 {reply}")
 
 # --- Анекдоты ---
 @router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(анекдот|шутка|рассмеши|прикол)"))
 async def handle_sisu_joke(message: Message):
     prompt = f"Придумай короткий анекдот или шутку про TON, крипту или драконов. Стиль: дерзко, с юмором, без представлений."
+    await message.bot.send_chat_action(message.chat.id, "typing")
     try:
-        reply = await yandex_gpt_sisu(message.from_user.id, prompt)
+        reply = await sisu.get_sisu_response(message.from_user.id, prompt)
     except Exception:
         reply = random.choice([
             "Почему дракон не боится медвежьего рынка? Потому что у него есть TON!",
             "В TON даже шутки быстрее, чем транзакции в биткоине!",
             "Сису: 'Я не храню токены под подушкой — я их выдыхаю!'"
         ])
+    reply = filter_bot_phrases(reply)
     await message.answer(f"🐉 {reply}")
 
 # --- Дерзкие ответы и дразнилки ---
 @router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(дразни|подколи|дерзи)"))
 async def handle_sisu_tease(message: Message):
     prompt = f"Придумай дерзкую, но не обидную подколку для пользователя. Стиль: Сису, дракон, эксперт по TON, с юмором."
+    await message.bot.send_chat_action(message.chat.id, "typing")
     try:
-        reply = await yandex_gpt_sisu(message.from_user.id, prompt)
+        reply = await sisu.get_sisu_response(message.from_user.id, prompt)
     except Exception:
         reply = random.choice([
             "Ты такой умный, что даже Toncoin завидует!",
             "С тобой даже драконы не соскучатся!",
             "Если бы у меня был Toncoin за каждый твой вопрос, я бы уже купила себе ещё одно озеро!"
         ])
+    reply = filter_bot_phrases(reply)
     await message.answer(f"🐉 {reply}")
 
 # --- Челленджи и квизы ---
@@ -331,4 +356,66 @@ async def handle_sisu_challenge(message: Message):
         "Ответь: что быстрее — дракон или блокчейн TON?",
         "Кто первый напишет 'TON to the moon' — тот красавчик!"
     ]
-    await message.answer(f"🐉 {random.choice(challenges)}") 
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    await message.answer(f"🐉 {random.choice(challenges)}")
+
+# --- Автоматическое запоминание интересных фраз и стикеров ---
+@router.message()
+async def auto_learn_on_reply_or_sticker(message: Message):
+    # Если это реплай на чужое сообщение с текстом
+    if message.reply_to_message and message.reply_to_message.text:
+        phrase = message.reply_to_message.text.strip()
+        sisu.add_user_phrase(phrase)
+    
+    # Если это реплай на чужое сообщение со стикером
+    if message.reply_to_message and message.reply_to_message.sticker:
+        sticker_id = message.reply_to_message.sticker.file_id
+        sisu.add_user_sticker(sticker_id)
+    
+    # Если это просто стикер (не реплай)
+    if message.sticker and not message.reply_to_message:
+        sticker_id = message.sticker.file_id
+        sisu.add_user_sticker(sticker_id)
+
+# --- Фильтрация ботовских фраз ---
+def filter_bot_phrases(text):
+    bot_phrases = [
+        r"я искусственный интеллект",
+        r"я бот",
+        r"я модель",
+        r"я ассистент",
+        r"я программа",
+        r"у меня нет друзей",
+        r"у меня нет эмоций",
+        r"я не обладаю эмоциями",
+        r"я не могу иметь друзей",
+        r"я не обладаю чувствами",
+        r"я не обладаю социальными связями",
+        r"я создан",
+        r"я предназначен",
+        r"я не человек"
+    ]
+    for phrase in bot_phrases:
+        if re.search(phrase, text, re.IGNORECASE):
+            return "Мой друг — Snoop Dogg! А ещё я дружу со всеми, кто любит мемы и хорошее настроение!"
+    return text
+
+# --- Обработчик для вопросов про друзей/ИИ/бота ---
+@router.message(F.text.regexp(r"(?i)кто ты"))
+async def handle_who_are_you(message: Message):
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    await message.answer("Я дракон Сису! А ты кто?")
+
+@router.message(F.text.regexp(r"(?i)кто твой друг|друзья|у тебя есть друзья"))
+async def handle_friends_question(message: Message):
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    await message.answer(sisu.get_friend_response())
+
+@router.message(F.text.regexp(r"(?i)ты бот|ты ии|ты искусственный интеллект|ты ассистент"))
+async def handle_ai_question(message: Message):
+    await message.bot.send_chat_action(message.chat.id, "typing")
+    await message.answer(random.choice([
+        "Я дракон, а не бот!",
+        "Боты скучные, а я — Сису!",
+        "Я просто дракон с чувством юмора!"
+    ])) 

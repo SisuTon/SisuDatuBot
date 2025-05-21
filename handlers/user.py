@@ -239,7 +239,6 @@ async def complete_task_callback(callback: CallbackQuery):
 
 @router.message(F.text == "💸 Задонать себе на будущее!")
 async def show_donate(message: Message):
-    """Обработчик доната"""
     await message.answer(
         "<b>💸 Задонать себе на будущее!</b>\n\n"
         "Купи Sisu — токен будущего. Это твой вклад в развитие проекта и возможность получить преимущества в будущем!\n\n"
@@ -297,7 +296,7 @@ async def handle_video(message: Message):
     await message.reply(reply, parse_mode="HTML")
 
 @router.message(F.text & ~F.text.in_([
-    "✅ CHECK-IN", "👤 Профиль", "🏆 Топ", "💎 Достижения", "🤝 Реферал", "📋 Задание дня", "💸 Донат", "💸 Задонать себе на будущее!", "ℹ️ Команды"
+    "✅ CHECK-IN", "👤 Профиль", "🏆 Топ", "💎 Достижения", "🤝 Реферал", "📋 Задание дня", "💸 Задонать себе на будущее!", "ℹ️ Команды"
 ]) & ~F.text.startswith("/") & ~F.text.lower().startswith("сису") & ~F.text.lower().startswith("sisu"))
 async def handle_text(message: Message):
     print(f"USER TEXT HANDLER: {message.text!r}")

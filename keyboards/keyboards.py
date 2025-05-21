@@ -8,7 +8,7 @@ def get_main_keyboard():
             [KeyboardButton(text="✅ CHECK-IN"), KeyboardButton(text="📋 Задание дня")],
             [KeyboardButton(text="👤 Профиль"), KeyboardButton(text="🏆 Топ")],
             [KeyboardButton(text="🤝 Реферал"), KeyboardButton(text="💎 Достижения")],
-            [KeyboardButton(text="💸 Донат"), KeyboardButton(text="ℹ️ Команды")]
+            [KeyboardButton(text="💸 Задонать себе на будущее!"), KeyboardButton(text="ℹ️ Команды")]
         ],
         resize_keyboard=True
     )

@@ -4904,3 +4904,829 @@ KeyError: 0
 2025-05-21 17:11:12,866 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
 2025-05-21 17:11:17,214 - aiogram.event - INFO - Update id=436035763 is handled. Duration 294 ms by bot id=7803467562
 2025-05-21 17:11:20,858 - aiogram.event - INFO - Update id=436035764 is not handled. Duration 5 ms by bot id=7803467562
+2025-05-21 17:12:03,878 - aiogram.event - INFO - Update id=436035765 is handled. Duration 150 ms by bot id=7803467562
+2025-05-21 17:12:23,789 - aiogram.event - INFO - Update id=436035766 is handled. Duration 162 ms by bot id=7803467562
+2025-05-21 17:13:06,486 - aiogram.event - INFO - Update id=436035767 is handled. Duration 117 ms by bot id=7803467562
+2025-05-21 17:13:19,178 - aiogram.event - INFO - Update id=436035768 is handled. Duration 127 ms by bot id=7803467562
+2025-05-21 17:14:50,792 - aiogram.event - INFO - Update id=436035769 is handled. Duration 162 ms by bot id=7803467562
+2025-05-21 17:15:24,936 - aiogram.event - INFO - Update id=436035770 is handled. Duration 155 ms by bot id=7803467562
+2025-05-21 17:15:26,102 - aiogram.event - INFO - Update id=436035771 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 17:15:28,308 - aiogram.event - INFO - Update id=436035772 is handled. Duration 531 ms by bot id=7803467562
+2025-05-21 17:15:31,513 - aiogram.event - INFO - Update id=436035773 is handled. Duration 114 ms by bot id=7803467562
+2025-05-21 17:15:37,019 - aiogram.event - INFO - Update id=436035774 is handled. Duration 122 ms by bot id=7803467562
+2025-05-21 17:15:45,567 - aiogram.event - INFO - Update id=436035775 is handled. Duration 149 ms by bot id=7803467562
+2025-05-21 17:15:47,730 - aiogram.event - INFO - Update id=436035776 is handled. Duration 152 ms by bot id=7803467562
+2025-05-21 17:20:09,453 - aiogram.event - INFO - Update id=436035777 is handled. Duration 126 ms by bot id=7803467562
+2025-05-21 17:20:16,621 - aiogram.event - INFO - Update id=436035778 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 17:20:34,747 - aiogram.event - INFO - Update id=436035779 is handled. Duration 3680 ms by bot id=7803467562
+2025-05-21 17:20:48,377 - aiogram.event - INFO - Update id=436035780 is handled. Duration 3066 ms by bot id=7803467562
+2025-05-21 17:20:52,286 - aiogram.event - INFO - Update id=436035781 is handled. Duration 185 ms by bot id=7803467562
+2025-05-21 17:20:54,017 - aiogram.event - INFO - Update id=436035782 is handled. Duration 119 ms by bot id=7803467562
+2025-05-21 17:20:55,967 - aiogram.event - INFO - Update id=436035783 is handled. Duration 146 ms by bot id=7803467562
+2025-05-21 17:20:58,007 - aiogram.event - INFO - Update id=436035784 is handled. Duration 170 ms by bot id=7803467562
+2025-05-21 17:22:53,032 - aiogram.event - INFO - Update id=436035785 is not handled. Duration 11 ms by bot id=7803467562
+2025-05-21 17:24:00,575 - aiogram.event - INFO - Update id=436035786 is handled. Duration 4682 ms by bot id=7803467562
+2025-05-21 17:24:44,441 - aiogram.event - INFO - Update id=436035787 is handled. Duration 3170 ms by bot id=7803467562
+2025-05-21 18:02:05,534 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-21 18:02:05,540 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7803467562)
+2025-05-21 18:02:22,941 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:02:22,941 - aiogram.dispatcher - WARNING - Sleep for 1.271130 seconds and try again... (tryings = 1, bot id = 7803467562)
+2025-05-21 18:02:40,613 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:02:40,616 - aiogram.dispatcher - WARNING - Sleep for 1.631658 seconds and try again... (tryings = 2, bot id = 7803467562)
+2025-05-21 18:02:58,656 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:02:58,657 - aiogram.dispatcher - WARNING - Sleep for 2.078529 seconds and try again... (tryings = 3, bot id = 7803467562)
+2025-05-21 18:03:17,147 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:03:17,150 - aiogram.dispatcher - WARNING - Sleep for 2.783204 seconds and try again... (tryings = 4, bot id = 7803467562)
+2025-05-21 18:03:36,341 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:03:36,343 - aiogram.dispatcher - WARNING - Sleep for 3.641529 seconds and try again... (tryings = 5, bot id = 7803467562)
+2025-05-21 18:03:56,390 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 18:03:56,392 - aiogram.dispatcher - WARNING - Sleep for 4.949089 seconds and try again... (tryings = 6, bot id = 7803467562)
+2025-05-21 19:07:48,371 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 19:07:48,372 - aiogram.dispatcher - WARNING - Sleep for 4.849157 seconds and try again... (tryings = 7, bot id = 7803467562)
+2025-05-21 19:09:03,731 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-21 19:09:03,732 - aiogram.dispatcher - WARNING - Sleep for 4.963375 seconds and try again... (tryings = 8, bot id = 7803467562)
+2025-05-21 19:10:19,514 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-21 19:10:19,517 - aiogram.dispatcher - WARNING - Sleep for 4.994671 seconds and try again... (tryings = 9, bot id = 7803467562)
+2025-05-21 19:28:35,030 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2025-05-21 19:28:35,033 - aiogram.dispatcher - WARNING - Sleep for 4.836617 seconds and try again... (tryings = 10, bot id = 7803467562)
+2025-05-21 19:29:50,001 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-21 19:29:50,007 - aiogram.dispatcher - WARNING - Sleep for 4.865550 seconds and try again... (tryings = 11, bot id = 7803467562)
+2025-05-21 19:31:05,008 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-21 19:31:05,011 - aiogram.dispatcher - WARNING - Sleep for 4.819601 seconds and try again... (tryings = 12, bot id = 7803467562)
+2025-05-21 19:31:17,705 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 19:31:17,713 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 19:31:17,713 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 19:31:21,578 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 19:31:51,589 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 20:30:10,258 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 20:30:10,406 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 20:30:23,714 - aiogram.event - INFO - Update id=436035788 is handled. Duration 213 ms by bot id=7803467562
+2025-05-21 20:30:32,078 - aiogram.event - INFO - Update id=436035789 is handled. Duration 2279 ms by bot id=7803467562
+2025-05-21 20:32:26,586 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 20:32:26,709 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 20:32:26,709 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 20:32:30,079 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 20:32:30,227 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 20:32:41,026 - aiogram.event - INFO - Update id=436035790 is not handled. Duration 5 ms by bot id=7803467562
+2025-05-21 20:32:41,026 - aiogram.event - ERROR - Cause exception while process update id=436035790 by bot id=7803467562
+DatabaseError: file is not a database
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 232, in handle_sisu_message
+    response = await get_random_humor_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 206, in get_random_humor_response
+    cursor.execute('SELECT response FROM humor_responses ORDER BY RANDOM() LIMIT 1')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.DatabaseError: file is not a database
+2025-05-21 20:32:56,620 - aiogram.event - INFO - Update id=436035791 is handled. Duration 974 ms by bot id=7803467562
+2025-05-21 20:49:38,707 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 20:49:38,730 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 20:49:38,730 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 20:49:41,238 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 20:49:41,382 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 20:49:56,548 - aiogram.event - INFO - Update id=436035792 is handled. Duration 977 ms by bot id=7803467562
+2025-05-21 20:54:40,641 - aiogram.event - INFO - Update id=436035793 is not handled. Duration 15 ms by bot id=7803467562
+2025-05-21 20:54:40,642 - aiogram.event - ERROR - Cause exception while process update id=436035793 by bot id=7803467562
+DatabaseError: file is not a database
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 241, in handle_sisu_message
+    response = await get_random_humor_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 215, in get_random_humor_response
+    cursor.execute('SELECT response FROM humor_responses ORDER BY RANDOM() LIMIT 1')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.DatabaseError: file is not a database
+2025-05-21 21:02:06,846 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 21:02:06,856 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:02:06,857 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 21:02:09,599 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 21:02:09,739 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:02:22,170 - aiogram.event - INFO - Update id=436035794 is handled. Duration 855 ms by bot id=7803467562
+2025-05-21 21:02:30,494 - aiogram.event - INFO - Update id=436035795 is not handled. Duration 6 ms by bot id=7803467562
+2025-05-21 21:02:30,495 - aiogram.event - ERROR - Cause exception while process update id=436035795 by bot id=7803467562
+DatabaseError: file is not a database
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 241, in handle_sisu_message
+    response = await get_random_humor_response()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 215, in get_random_humor_response
+    cursor.execute('SELECT response FROM humor_responses ORDER BY RANDOM() LIMIT 1')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.DatabaseError: file is not a database
+2025-05-21 21:09:21,307 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 21:09:21,310 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:09:21,311 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 21:09:24,371 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 21:09:24,508 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:09:37,310 - aiogram.event - INFO - Update id=436035796 is handled. Duration 736 ms by bot id=7803467562
+2025-05-21 21:09:48,303 - aiogram.event - INFO - Update id=436035797 is handled. Duration 958 ms by bot id=7803467562
+2025-05-21 21:12:52,254 - aiogram.event - INFO - Update id=436035798 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 21:13:01,251 - aiogram.event - INFO - Update id=436035799 is handled. Duration 21 ms by bot id=7803467562
+2025-05-21 21:13:12,840 - aiogram.event - INFO - Update id=436035800 is handled. Duration 2268 ms by bot id=7803467562
+2025-05-21 21:13:37,616 - aiogram.event - INFO - Update id=436035801 is handled. Duration 2357 ms by bot id=7803467562
+2025-05-21 21:17:18,889 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 21:17:18,922 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:17:18,923 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 21:17:21,638 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 21:17:21,779 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:17:32,198 - aiogram.event - INFO - Update id=436035802 is handled. Duration 708 ms by bot id=7803467562
+2025-05-21 21:24:27,885 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 21:24:27,893 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:24:27,894 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 21:24:30,572 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 21:24:30,704 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:24:48,139 - aiogram.event - INFO - Update id=436035803 is handled. Duration 659 ms by bot id=7803467562
+2025-05-21 21:25:03,316 - aiogram.event - INFO - Update id=436035804 is handled. Duration 1350 ms by bot id=7803467562
+2025-05-21 21:25:21,809 - aiogram.event - INFO - Update id=436035805 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 21:25:36,796 - aiogram.event - INFO - Update id=436035806 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 21:25:50,944 - aiogram.event - INFO - Update id=436035807 is handled. Duration 1251 ms by bot id=7803467562
+2025-05-21 21:30:42,629 - aiogram.event - INFO - Update id=436035808 is handled. Duration 627 ms by bot id=7803467562
+2025-05-21 21:31:00,581 - aiogram.event - INFO - Update id=436035809 is handled. Duration 1334 ms by bot id=7803467562
+2025-05-21 21:31:15,035 - aiogram.event - INFO - Update id=436035810 is handled. Duration 15 ms by bot id=7803467562
+2025-05-21 21:31:23,991 - aiogram.event - INFO - Update id=436035811 is handled. Duration 979 ms by bot id=7803467562
+2025-05-21 21:31:48,224 - aiogram.event - INFO - Update id=436035812 is handled. Duration 1206 ms by bot id=7803467562
+2025-05-21 21:32:03,250 - aiogram.event - INFO - Update id=436035813 is handled. Duration 1035 ms by bot id=7803467562
+2025-05-21 21:38:20,019 - aiogram.event - INFO - Update id=436035814 is handled. Duration 148 ms by bot id=7803467562
+2025-05-21 21:39:22,630 - aiogram.event - INFO - Update id=436035815 is handled. Duration 733 ms by bot id=7803467562
+2025-05-21 21:39:26,799 - aiogram.event - INFO - Update id=436035816 is not handled. Duration 13 ms by bot id=7803467562
+2025-05-21 21:39:26,799 - aiogram.event - ERROR - Cause exception while process update id=436035816 by bot id=7803467562
+TypeError: update_user_check_in() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/user.py", line 71, in check_in
+    await update_user_check_in(message.from_user.id, new_streak)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: update_user_check_in() takes 1 positional argument but 2 were given
+2025-05-21 21:39:54,113 - aiogram.event - INFO - Update id=436035817 is handled. Duration 3457 ms by bot id=7803467562
+2025-05-21 21:40:32,571 - aiogram.event - INFO - Update id=436035818 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 21:41:28,949 - aiogram.event - INFO - Update id=436035819 is handled. Duration 153 ms by bot id=7803467562
+2025-05-21 21:41:49,347 - aiogram.event - INFO - Update id=436035820 is handled. Duration 6 ms by bot id=7803467562
+2025-05-21 21:41:58,450 - aiogram.event - INFO - Update id=436035821 is handled. Duration 9 ms by bot id=7803467562
+2025-05-21 21:42:47,367 - aiogram.event - INFO - Update id=436035822 is not handled. Duration 18 ms by bot id=7803467562
+2025-05-21 21:42:47,368 - aiogram.event - ERROR - Cause exception while process update id=436035822 by bot id=7803467562
+TypeError: update_user_check_in() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/user.py", line 71, in check_in
+    await update_user_check_in(message.from_user.id, new_streak)
+          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: update_user_check_in() takes 1 positional argument but 2 were given
+2025-05-21 21:42:59,600 - aiogram.event - INFO - Update id=436035823 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 21:43:02,254 - aiogram.event - INFO - Update id=436035824 is handled. Duration 116 ms by bot id=7803467562
+2025-05-21 21:43:03,938 - aiogram.event - INFO - Update id=436035825 is handled. Duration 91 ms by bot id=7803467562
+2025-05-21 21:43:05,480 - aiogram.event - INFO - Update id=436035826 is handled. Duration 76 ms by bot id=7803467562
+2025-05-21 21:43:21,786 - aiogram.event - INFO - Update id=436035827 is handled. Duration 102 ms by bot id=7803467562
+2025-05-21 21:43:27,128 - aiogram.event - INFO - Update id=436035828 is handled. Duration 113 ms by bot id=7803467562
+2025-05-21 21:43:52,137 - aiogram.event - INFO - Update id=436035829 is handled. Duration 109 ms by bot id=7803467562
+2025-05-21 21:44:39,537 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 21:44:39,550 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:44:39,550 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 21:44:42,593 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 21:44:42,740 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 21:44:54,271 - aiogram.event - INFO - Update id=436035830 is not handled. Duration 240 ms by bot id=7803467562
+2025-05-21 21:44:54,272 - aiogram.event - ERROR - Cause exception while process update id=436035830 by bot id=7803467562
+TypeError: get_sisu_response() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 247, in handle_sisu_message
+    response = await get_sisu_response(message.from_user.id, query, context)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_sisu_response() takes 2 positional arguments but 3 were given
+2025-05-21 21:45:28,209 - aiogram.event - INFO - Update id=436035831 is not handled. Duration 93 ms by bot id=7803467562
+2025-05-21 21:45:28,210 - aiogram.event - ERROR - Cause exception while process update id=436035831 by bot id=7803467562
+TypeError: get_sisu_response() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 247, in handle_sisu_message
+    response = await get_sisu_response(message.from_user.id, query, context)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_sisu_response() takes 2 positional arguments but 3 were given
+2025-05-21 21:50:47,121 - aiogram.event - INFO - Update id=436035832 is handled. Duration 143 ms by bot id=7803467562
+2025-05-21 21:50:48,887 - aiogram.event - INFO - Update id=436035833 is handled. Duration 82 ms by bot id=7803467562
+2025-05-21 21:50:50,635 - aiogram.event - INFO - Update id=436035834 is handled. Duration 138 ms by bot id=7803467562
+2025-05-21 21:50:54,854 - aiogram.event - INFO - Update id=436035835 is handled. Duration 79 ms by bot id=7803467562
+2025-05-21 22:05:14,940 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 22:05:14,951 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:05:14,952 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 22:05:17,611 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 22:05:17,751 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:05:54,266 - aiogram.event - INFO - Update id=436035836 is handled. Duration 1161 ms by bot id=7803467562
+2025-05-21 22:06:43,717 - aiogram.event - INFO - Update id=436035837 is handled. Duration 1092 ms by bot id=7803467562
+2025-05-21 22:06:56,193 - aiogram.event - INFO - Update id=436035838 is handled. Duration 1007 ms by bot id=7803467562
+2025-05-21 22:07:42,377 - aiogram.event - INFO - Update id=436035839 is handled. Duration 3552 ms by bot id=7803467562
+2025-05-21 22:08:50,384 - aiogram.event - INFO - Update id=436035840 is handled. Duration 3744 ms by bot id=7803467562
+2025-05-21 22:09:41,274 - aiogram.event - INFO - Update id=436035841 is handled. Duration 2 ms by bot id=7803467562
+2025-05-21 22:09:43,861 - aiogram.event - INFO - Update id=436035842 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 22:10:49,809 - aiogram.event - INFO - Update id=436035843 is handled. Duration 3716 ms by bot id=7803467562
+2025-05-21 22:11:08,480 - aiogram.event - INFO - Update id=436035844 is handled. Duration 2 ms by bot id=7803467562
+2025-05-21 22:11:23,725 - aiogram.event - INFO - Update id=436035845 is handled. Duration 658 ms by bot id=7803467562
+2025-05-21 22:11:52,840 - aiogram.event - INFO - Update id=436035846 is handled. Duration 12 ms by bot id=7803467562
+2025-05-21 22:12:26,911 - aiogram.event - INFO - Update id=436035847 is handled. Duration 15 ms by bot id=7803467562
+2025-05-21 22:12:35,442 - aiogram.event - INFO - Update id=436035848 is handled. Duration 3564 ms by bot id=7803467562
+2025-05-21 22:12:50,505 - aiogram.event - INFO - Update id=436035849 is handled. Duration 2 ms by bot id=7803467562
+2025-05-21 22:12:51,731 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 22:12:51,733 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:12:51,733 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 22:15:48,841 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 22:15:48,983 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:15:49,034 - aiogram.event - INFO - Update id=436035850 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 22:15:49,034 - aiogram.event - INFO - Update id=436035852 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 22:15:49,036 - aiogram.event - INFO - Update id=436035851 is handled. Duration 6 ms by bot id=7803467562
+2025-05-21 22:16:22,403 - aiogram.event - INFO - Update id=436035853 is handled. Duration 3659 ms by bot id=7803467562
+2025-05-21 22:16:47,348 - aiogram.event - INFO - Update id=436035854 is handled. Duration 132 ms by bot id=7803467562
+2025-05-21 22:16:48,628 - aiogram.event - INFO - Update id=436035855 is handled. Duration 155 ms by bot id=7803467562
+2025-05-21 22:16:49,343 - aiogram.event - INFO - Update id=436035856 is handled. Duration 118 ms by bot id=7803467562
+2025-05-21 22:16:50,789 - aiogram.event - INFO - Update id=436035857 is handled. Duration 127 ms by bot id=7803467562
+2025-05-21 22:16:51,824 - aiogram.event - INFO - Update id=436035858 is handled. Duration 203 ms by bot id=7803467562
+2025-05-21 22:17:00,286 - aiogram.event - INFO - Update id=436035859 is handled. Duration 936 ms by bot id=7803467562
+2025-05-21 22:17:37,803 - aiogram.event - INFO - Update id=436035860 is handled. Duration 698 ms by bot id=7803467562
+2025-05-21 22:17:46,660 - aiogram.event - INFO - Update id=436035861 is handled. Duration 86 ms by bot id=7803467562
+2025-05-21 22:22:48,013 - aiogram.event - INFO - Update id=436035862 is handled. Duration 657 ms by bot id=7803467562
+2025-05-21 22:22:59,528 - aiogram.event - INFO - Update id=436035863 is handled. Duration 806 ms by bot id=7803467562
+2025-05-21 22:23:14,542 - aiogram.event - INFO - Update id=436035864 is handled. Duration 598 ms by bot id=7803467562
+2025-05-21 22:24:24,296 - aiogram.event - INFO - Update id=436035865 is handled. Duration 542 ms by bot id=7803467562
+2025-05-21 22:24:34,994 - aiogram.event - INFO - Update id=436035866 is handled. Duration 4 ms by bot id=7803467562
+2025-05-21 22:25:44,316 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 22:25:44,323 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:25:44,324 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 22:32:13,048 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 22:32:13,193 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:32:34,786 - aiogram.event - INFO - Update id=436035867 is handled. Duration 1330 ms by bot id=7803467562
+2025-05-21 22:32:42,900 - aiogram.event - INFO - Update id=436035868 is handled. Duration 125 ms by bot id=7803467562
+2025-05-21 22:34:03,372 - aiogram.event - INFO - Update id=436035869 is handled. Duration 584 ms by bot id=7803467562
+2025-05-21 22:34:19,814 - aiogram.event - INFO - Update id=436035870 is handled. Duration 799 ms by bot id=7803467562
+2025-05-21 22:35:12,354 - aiogram.event - INFO - Update id=436035871 is handled. Duration 785 ms by bot id=7803467562
+2025-05-21 22:35:22,539 - aiogram.event - INFO - Update id=436035872 is handled. Duration 844 ms by bot id=7803467562
+2025-05-21 22:48:17,037 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 22:48:17,061 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:48:17,064 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 22:49:59,290 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 22:49:59,436 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:50:08,402 - aiogram.event - INFO - Update id=436035873 is handled. Duration 585 ms by bot id=7803467562
+2025-05-21 22:50:21,698 - aiogram.event - INFO - Update id=436035874 is handled. Duration 337 ms by bot id=7803467562
+2025-05-21 22:53:14,632 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 22:53:14,642 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:53:14,643 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 22:53:17,758 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 22:53:19,190 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 22:53:40,412 - aiogram.event - INFO - Update id=436035875 is handled. Duration 748 ms by bot id=7803467562
+2025-05-21 23:04:45,150 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:04:45,156 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:04:45,157 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:04:47,698 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:04:47,860 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:04:57,844 - aiogram.event - INFO - Update id=436035876 is handled. Duration 730 ms by bot id=7803467562
+2025-05-21 23:05:10,398 - aiogram.event - INFO - Update id=436035877 is handled. Duration 558 ms by bot id=7803467562
+2025-05-21 23:05:36,929 - aiogram.event - INFO - Update id=436035878 is handled. Duration 11 ms by bot id=7803467562
+2025-05-21 23:05:47,996 - aiogram.event - INFO - Update id=436035879 is handled. Duration 1594 ms by bot id=7803467562
+2025-05-21 23:14:28,471 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:14:28,474 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:14:28,475 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:14:30,776 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:14:30,917 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:14:37,726 - aiogram.event - INFO - Update id=436035880 is handled. Duration 689 ms by bot id=7803467562
+2025-05-21 23:14:50,482 - aiogram.event - INFO - Update id=436035881 is handled. Duration 1136 ms by bot id=7803467562
+2025-05-21 23:15:51,114 - aiogram.event - INFO - Update id=436035882 is handled. Duration 822 ms by bot id=7803467562
+2025-05-21 23:16:40,082 - aiogram.event - INFO - Update id=436035883 is handled. Duration 631 ms by bot id=7803467562
+2025-05-21 23:18:08,235 - aiogram.event - INFO - Update id=436035884 is handled. Duration 597 ms by bot id=7803467562
+2025-05-21 23:18:21,332 - aiogram.event - INFO - Update id=436035885 is handled. Duration 19 ms by bot id=7803467562
+2025-05-21 23:18:30,660 - aiogram.event - INFO - Update id=436035886 is handled. Duration 573 ms by bot id=7803467562
+2025-05-21 23:19:24,794 - aiogram.event - INFO - Update id=436035887 is handled. Duration 802 ms by bot id=7803467562
+2025-05-21 23:20:40,357 - aiogram.event - INFO - Update id=436035888 is handled. Duration 497 ms by bot id=7803467562
+2025-05-21 23:24:19,053 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:24:19,058 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:24:19,058 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:24:21,680 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:24:21,868 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:24:32,713 - aiogram.event - INFO - Update id=436035889 is handled. Duration 711 ms by bot id=7803467562
+2025-05-21 23:26:11,927 - aiogram.event - INFO - Update id=436035890 is handled. Duration 994 ms by bot id=7803467562
+2025-05-21 23:26:23,605 - aiogram.event - INFO - Update id=436035891 is handled. Duration 620 ms by bot id=7803467562
+2025-05-21 23:26:56,892 - aiogram.event - INFO - Update id=436035892 is handled. Duration 94 ms by bot id=7803467562
+2025-05-21 23:27:25,995 - aiogram.event - INFO - Update id=436035893 is handled. Duration 76 ms by bot id=7803467562
+2025-05-21 23:27:27,431 - aiogram.event - INFO - Update id=436035894 is handled. Duration 92 ms by bot id=7803467562
+2025-05-21 23:27:28,980 - aiogram.event - INFO - Update id=436035895 is handled. Duration 89 ms by bot id=7803467562
+2025-05-21 23:27:31,048 - aiogram.event - INFO - Update id=436035896 is handled. Duration 82 ms by bot id=7803467562
+2025-05-21 23:34:02,629 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:34:02,641 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:34:02,643 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:34:05,649 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:34:05,800 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:34:25,398 - aiogram.event - INFO - Update id=436035897 is not handled. Duration 153 ms by bot id=7803467562
+2025-05-21 23:34:25,402 - aiogram.event - ERROR - Cause exception while process update id=436035897 by bot id=7803467562
+AttributeError: 'SisuService' object has no attribute 'API_KEY'
+Traceback (most recent call last):
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/handlers/sisu.py", line 233, in handle_sisu_message
+    response = await sisu.get_sisu_response(message.from_user.id, query, context)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/byorg/Desktop/SisuDatuBot/services/sisu_service.py", line 148, in get_sisu_response
+    "Authorization": f"Api-Key {self.API_KEY}",
+                                ^^^^^^^^^^^^
+AttributeError: 'SisuService' object has no attribute 'API_KEY'
+2025-05-21 23:36:12,539 - aiogram.event - INFO - Update id=436035898 is handled. Duration 191 ms by bot id=7803467562
+2025-05-21 23:36:14,877 - aiogram.event - INFO - Update id=436035899 is handled. Duration 77 ms by bot id=7803467562
+2025-05-21 23:36:15,951 - aiogram.event - INFO - Update id=436035900 is handled. Duration 87 ms by bot id=7803467562
+2025-05-21 23:36:16,831 - aiogram.event - INFO - Update id=436035901 is handled. Duration 73 ms by bot id=7803467562
+2025-05-21 23:36:17,641 - aiogram.event - INFO - Update id=436035902 is handled. Duration 93 ms by bot id=7803467562
+2025-05-21 23:45:05,084 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:45:05,086 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:45:05,086 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:45:07,685 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:45:07,826 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:45:19,537 - aiogram.event - INFO - Update id=436035903 is handled. Duration 756 ms by bot id=7803467562
+2025-05-21 23:45:49,386 - aiogram.event - INFO - Update id=436035904 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 23:48:59,178 - aiogram.event - INFO - Update id=436035905 is handled. Duration 572 ms by bot id=7803467562
+2025-05-21 23:49:23,255 - aiogram.event - INFO - Update id=436035906 is handled. Duration 879 ms by bot id=7803467562
+2025-05-21 23:49:39,903 - aiogram.event - INFO - Update id=436035907 is handled. Duration 650 ms by bot id=7803467562
+2025-05-21 23:50:08,849 - aiogram.event - INFO - Update id=436035908 is handled. Duration 1199 ms by bot id=7803467562
+2025-05-21 23:53:24,597 - aiogram.event - INFO - Update id=436035909 is handled. Duration 586 ms by bot id=7803467562
+2025-05-21 23:53:34,755 - aiogram.event - INFO - Update id=436035910 is handled. Duration 693 ms by bot id=7803467562
+2025-05-21 23:53:51,250 - aiogram.event - INFO - Update id=436035911 is handled. Duration 701 ms by bot id=7803467562
+2025-05-21 23:55:35,172 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-21 23:55:35,175 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:55:35,175 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 23:55:37,669 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 23:55:37,823 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 23:55:47,892 - aiogram.event - INFO - Update id=436035912 is handled. Duration 870 ms by bot id=7803467562
+2025-05-21 23:56:04,553 - aiogram.event - INFO - Update id=436035913 is handled. Duration 930 ms by bot id=7803467562
+2025-05-21 23:57:15,972 - aiogram.event - INFO - Update id=436035914 is handled. Duration 93 ms by bot id=7803467562
+2025-05-21 23:57:27,458 - aiogram.event - INFO - Update id=436035915 is handled. Duration 118 ms by bot id=7803467562
+2025-05-21 23:57:29,065 - aiogram.event - INFO - Update id=436035916 is handled. Duration 83 ms by bot id=7803467562
+2025-05-21 23:57:30,439 - aiogram.event - INFO - Update id=436035917 is handled. Duration 64 ms by bot id=7803467562
+2025-05-21 23:57:33,612 - aiogram.event - INFO - Update id=436035918 is handled. Duration 64 ms by bot id=7803467562
+2025-05-21 23:57:34,720 - aiogram.event - INFO - Update id=436035919 is handled. Duration 67 ms by bot id=7803467562
+2025-05-21 23:57:36,395 - aiogram.event - INFO - Update id=436035920 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 23:57:38,478 - aiogram.event - INFO - Update id=436035921 is handled. Duration 3 ms by bot id=7803467562
+2025-05-21 23:57:40,366 - aiogram.event - INFO - Update id=436035922 is handled. Duration 2 ms by bot id=7803467562
+2025-05-21 23:57:42,082 - aiogram.event - INFO - Update id=436035923 is handled. Duration 73 ms by bot id=7803467562
+2025-05-21 23:57:44,775 - aiogram.event - INFO - Update id=436035924 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:01:36,723 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 00:01:36,733 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:01:36,733 - aiogram.dispatcher - INFO - Polling stopped
