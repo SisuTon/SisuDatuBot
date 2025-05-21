@@ -4900,3 +4900,7 @@ KeyError: 0
 2025-05-21 17:10:26,279 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-21 17:10:26,281 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
 2025-05-21 17:10:26,281 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-21 17:11:11,467 - aiogram.dispatcher - INFO - Start polling
+2025-05-21 17:11:12,866 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-21 17:11:17,214 - aiogram.event - INFO - Update id=436035763 is handled. Duration 294 ms by bot id=7803467562
+2025-05-21 17:11:20,858 - aiogram.event - INFO - Update id=436035764 is not handled. Duration 5 ms by bot id=7803467562
