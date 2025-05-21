@@ -10,6 +10,9 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from dotenv import load_dotenv
 from config.settings import SUPER_ADMINS
+from services.sisu_service import (
+    rate_limited, get_sisu_response, generate_art
+)
 
 load_dotenv()
 
@@ -166,48 +169,79 @@ async def yandex_art_generate(prompt):
     return None
 
 def is_allowed(message):
-    # В личке — только суперадмин, в группах — всем
+    """Проверка доступа к Sisu"""
     if message.chat.type == "private" and message.from_user.id not in SUPER_ADMINS:
         print(f"Not allowed: user {message.from_user.id} in private chat")
         return False
     return True
 
-@router.message(F.text.regexp(r"(?i)\\b(Сису|Sisu)[, ]*(запомни|учись)[: ]+(.+)"))
-async def handle_sisu_learn(message: Message):
-    match = re.search(r"(?i)\\b(Сису|Sisu)[, ]*(запомни|учись)[: ]+(.+)", message.text)
-    if match:
-        new_phrase = match.group(3).strip()
-        # Фильтр на грубость/мат
-        if any(word in new_phrase.lower() for word in RUDE_WORDS):
-            await message.answer("Я не буду такое запоминать! Давай что-то поумнее.")
-            return
-        if new_phrase:
-            SISU_JOKES.append(new_phrase)
-            user_phrases.append(new_phrase)
-            save_user_phrases()
-            await message.answer(f"Запомнила! Теперь могу отвечать так: '{new_phrase}' 🐉")
-        else:
-            await message.answer("Ты забыл фразу для обучения! Попробуй ещё раз.")
-    else:
-        await message.answer("Не поняла, чему учиться! Напиши: 'Сису, запомни: твоя фраза'")
-
-@router.message(F.text.regexp(r"^(Сису|Sisu)$", flags=re.IGNORECASE))
-async def handle_sisu_name_only(message: Message):
+@router.message(Command("sisu"))
+async def cmd_sisu(message: Message):
+    """Обработчик команды /sisu"""
     if not is_allowed(message):
         return
+    
     if not rate_limited(message.from_user.id):
         await message.answer("Сису устала! Подожди немного перед следующим вопросом 🐉")
         return
-    reply = random.choice([
-        "Что, опять я? Ну давай, удиви!",
-        "Я тут, как всегда, в поиске новых токенов!",
-        "Сису слушает... и уже готовит сарказм!",
-        "Сису тут, чтобы добавить магии в чат!"
-    ])
-    await message.answer(f"🐉 {reply}")
+    
+    # Получаем текст после команды /sisu
+    query = message.text.replace("/sisu", "").strip()
+    if not query:
+        await message.answer(
+            "🐉 Приветствую, смертный! Я Сису, последний дракон криптомира! "
+            "Готова поделиться с тобой своей мудростью о блокчейне и токенах. "
+            "Просто напиши свой вопрос после команды /sisu"
+        )
+        return
+    
+    # Получаем ответ от Sisu
+    response = await get_sisu_response(message.from_user.id, query)
+    await message.answer(f"🐉 {response}")
 
-@router.message(F.text.regexp(r"(?i)\b(Сису|Sisu)\b"))
+@router.message(F.text.startswith("Сису,") | F.text.startswith("Сису "))
+async def handle_sisu_message(message: Message):
+    """Обработчик сообщений, начинающихся с 'Сису'"""
+    if not is_allowed(message):
+        return
+    
+    if not rate_limited(message.from_user.id):
+        await message.answer("Сису устала! Подожди немного перед следующим вопросом 🐉")
+        return
+    
+    # Получаем текст после обращения к Сису
+    query = message.text.replace("Сису,", "").replace("Сису ", "").strip()
+    if not query:
+        return
+    
+    # Получаем ответ от Sisu
+    response = await get_sisu_response(message.from_user.id, query)
+    await message.answer(f"🐉 {response}")
+
+@router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(нарисуй|арт|картинка|рисунок)"))
+async def handle_sisu_art(message: Message):
+    """Обработчик запросов на генерацию изображений"""
+    if not is_allowed(message):
+        return
+    
+    if not rate_limited(message.from_user.id):
+        await message.answer("Сису устала! Подожди немного перед следующим вопросом 🐉")
+        return
+    
+    prompt = "Нарисуй картину в стиле дракона Сису, криптовалют и TON. Используй яркие цвета и футуристические элементы."
+    try:
+        image_url = await generate_art(prompt)
+        if image_url:
+            await message.answer_photo(image_url, caption="🐉 Вот что я нарисовала!")
+        else:
+            await message.answer("Извините, не удалось сгенерировать изображение. Попробуйте позже.")
+    except Exception as e:
+        print(f"Error generating art: {e}")
+        await message.answer("Извините, произошла ошибка при генерации изображения.")
+
+@router.message(F.text.regexp(r"(?i)\\b(Сису|Sisu)\\b"))
 async def handle_sisu_universal(message: Message):
+    """Handle all other Sisu mentions"""
     text = message.text.lower()
     # Спец. триггеры
     if any(t in text for t in ["мем", "мемчик", "мемас", "мем про"]):
@@ -236,7 +270,7 @@ async def handle_sisu_universal(message: Message):
         reply = await yandex_gpt_sisu(message.from_user.id, prompt)
     except Exception:
         reply = random.choice(SISU_JOKES)
-    await message.answer(f"�� {reply}")
+    await message.answer(f"🐉 {reply}")
 
 # --- Мемы и анекдоты ---
 MEME_TRIGGERS = [r"мем", r"сгенерируй мем", r"мемчик", r"мемас", r"мем про"]
@@ -258,21 +292,6 @@ async def handle_sisu_meme(message: Message):
             "В TON даже мемы быстрее, чем биткоин падает!"
         ])
     await message.answer(f"🐉 {reply}")
-
-# --- Арт ---
-@router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(нарисуй|арт|картинка|рисунок)"))
-async def handle_sisu_art(message: Message):
-    match = re.search(r"(?i)(нарисуй|арт|картинка|рисунок)[,: ]*(.+)", message.text)
-    prompt = match.group(2).strip() if match else "дракон в стиле TON"
-    await message.answer("Сису рисует... 🖌️")
-    try:
-        image_url = await yandex_art_generate(prompt)
-        if image_url:
-            await message.answer_photo(image_url, caption=f"🎨 Сису нарисовала: {prompt}")
-            return
-    except Exception:
-        pass
-    await message.answer("Сегодня магия не работает, но я обязательно нарисую в следующий раз!")
 
 # --- Анекдоты ---
 @router.message(F.text.regexp(r"(?i)(Сису|Sisu).*(анекдот|шутка|рассмеши|прикол)"))
