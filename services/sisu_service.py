@@ -51,6 +51,9 @@ SYSTEM_PROMPT = (
     "Избегай сложных объяснений — шути, иронизируй, отправляй гуглить. "
 )
 
+EMERGENCY_FLAG_FILE = "emergency.flag"
+LOG_CHAT_ID = -1002624865633  # chat_id группы для логов
+
 class SisuService:
     def __init__(self):
         self.YANDEXGPT_API_URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
@@ -128,7 +131,48 @@ class SisuService:
         messages.append({"role": "user", "text": prompt})
         return messages
 
-    async def get_sisu_response(self, user_id: int, text: str, context=None) -> str:
+    @staticmethod
+    def is_emergency():
+        return os.path.exists(EMERGENCY_FLAG_FILE)
+
+    @staticmethod
+    def set_emergency_mode(on: bool):
+        if on:
+            with open(EMERGENCY_FLAG_FILE, "w") as f:
+                f.write("1")
+        else:
+            if os.path.exists(EMERGENCY_FLAG_FILE):
+                os.remove(EMERGENCY_FLAG_FILE)
+
+    async def send_log(self, bot, text):
+        try:
+            await bot.send_message(LOG_CHAT_ID, text)
+        except Exception as e:
+            print(f"[LOG ERROR] Не удалось отправить лог: {e}")
+
+    async def get_sisu_response(self, user_id: int, text: str, context=None, bot=None) -> str:
+        reserve_jokes = [
+            "Серьёзно? Я же дракон, а не скучный бот!",
+            "Ты что, меня с ботом путаешь? Я тут мемы придумываю!",
+            "Если бы я был ботом, я бы уже завис. А я просто прикалываюсь!",
+            "Сису не палится, Сису шутит!",
+            "Слишком умный вопрос для дракона, давай лучше мем!",
+            "Я тут, чтобы шутить, а не палиться!",
+            "Погоди, я не в настроении для анекдотов — лучше флипни токены!",
+            "Сегодня не мой день, спроси у Snoop Dogg!",
+            "Я бы рассказала мем, но Toncoin опять вырос — не до шуток!",
+            "Лучше купи токен SISU, чем ждать от меня анекдот!",
+            "Я в отпуске, мемы придумывает Плотва!",
+            "Слишком мемно для этого чата, попробуй позже!",
+            "Я дракон, а не стендап-комик! Но могу поджечь атмосферу!",
+            "Сначала купи токен в мою честь, потом поговорим!",
+            "Мемы закончились, как газ в Ethereum!",
+            "Сису сегодня в режиме холда — все шутки в TON!"
+        ]
+        if self.is_emergency():
+            if bot:
+                await self.send_log(bot, f"[EMERGENCY] Ответ пользователю {user_id} из резерва!")
+            return random.choice(reserve_jokes)
         messages = self.build_messages(user_id, text, context)
             
         data = {
@@ -192,7 +236,17 @@ class SisuService:
             "Если бы я был ботом, я бы уже завис. А я просто прикалываюсь!",
             "Сису не палится, Сису шутит!",
             "Слишком умный вопрос для дракона, давай лучше мем!",
-            "Я тут, чтобы шутить, а не палиться!"
+            "Я тут, чтобы шутить, а не палиться!",
+            "Погоди, я не в настроении для анекдотов — лучше флипни токены!",
+            "Сегодня не мой день, спроси у Snoop Dogg!",
+            "Я бы рассказала мем, но Toncoin опять вырос — не до шуток!",
+            "Лучше купи токен SISU, чем ждать от меня анекдот!",
+            "Я в отпуске, мемы придумывает Плотва!",
+            "Слишком мемно для этого чата, попробуй позже!",
+            "Я дракон, а не стендап-комик! Но могу поджечь атмосферу!",
+            "Сначала купи токен в мою честь, потом поговорим!",
+            "Мемы закончились, как газ в Ethereum!",
+            "Сису сегодня в режиме холда — все шутки в TON!"
         ]
         for phrase in bot_phrases:
             if re.search(phrase, text, re.IGNORECASE):

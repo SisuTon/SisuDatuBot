@@ -20,6 +20,7 @@ import re
 from collections import defaultdict
 from aiogram.utils.chat_action import ChatActionSender
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from handlers.admin import load_allowed_chats
 
 router = Router()
 
@@ -33,6 +34,14 @@ MESSAGE_HISTORY_SIZE = 3  # Количество последних сообще
 
 # Словарь для хранения id последнего сообщения с заданием дня для каждого пользователя
 last_task_message = {}
+
+@router.message()
+async def block_if_not_allowed(message: Message):
+    if message.chat.type in ("group", "supergroup"):
+        allowed = load_allowed_chats()
+        if message.chat.id not in allowed:
+            return  # Игнорируем все сообщения в неразрешённых чатах
+    # Остальные обработчики будут работать только если чат разрешён
 
 @router.message(F.text == "✅ CHECK-IN")
 async def check_in(message: Message):
@@ -255,10 +264,7 @@ async def show_commands(message: Message):
         "/menu — главное меню\n"
         "/profile — ваш профиль\n"
         "/top — топ участников\n"
-        "/task — задание дня\n"
-        "/referral — ваша реферальная ссылка\n"
-        "/achievements — ваши достижения\n"
-        "/donate — поддержать проект"
+        "/task — задание дня"
     )
 
 @router.message(Command("task"))
@@ -311,4 +317,22 @@ async def handle_text(message: Message):
     if await add_user_points(message.from_user.id, points, "text_message"):
         phrase = random.choice(TEXT_PHRASES)
         reply = f"<b>{message.from_user.full_name}</b>\n{phrase}\n💎 <b>+{points} баллов</b>"
-        await message.reply(reply, parse_mode="HTML") 
+        await message.reply(reply, parse_mode="HTML")
+
+@router.message(Command("referral"))
+async def referral_cmd(message: Message):
+    if message.chat.type == "private":
+        return  # Не отвечаем в личке
+    await message.answer("Реферальная система скоро будет доступна! Следи за обновлениями.")
+
+@router.message(Command("achievements"))
+async def achievements_cmd(message: Message):
+    if message.chat.type == "private":
+        return  # Не отвечаем в личке
+    await message.answer("Раздел достижений скоро появится! Следи за обновлениями 😉")
+
+@router.message(Command("donate"))
+async def donate_cmd(message: Message):
+    if message.chat.type == "private":
+        return  # Не отвечаем в личке
+    await message.answer("Задонать себе на будущее! Или поддержи проект тут: https://t.me/your_donate_link") 

@@ -30,7 +30,7 @@ def get_admin_keyboard():
             [KeyboardButton(text="📢 Рассылка"), KeyboardButton(text="✏️ Создать задание")],
             [KeyboardButton(text="👥 Пользователи"), KeyboardButton(text="📊 Статистика")],
             [KeyboardButton(text="⚙️ Настройки"), KeyboardButton(text="🔧 Обслуживание")],
-            [KeyboardButton(text="❌ Отмена")]
+            [KeyboardButton(text="💸 Задонать себе на будущее!"), KeyboardButton(text="❌ Отмена")]
         ],
         resize_keyboard=True
     )

@@ -418,4 +418,55 @@ async def handle_ai_question(message: Message):
         "Я дракон, а не бот!",
         "Боты скучные, а я — Сису!",
         "Я просто дракон с чувством юмора!"
-    ])) 
+    ]))
+
+@router.message(Command('emergency_on'))
+async def emergency_on(message: Message):
+    if message.from_user.id in SUPER_ADMINS:
+        SisuService.set_emergency_mode(True)
+        await message.answer('Аварийный режим включён! Теперь только мемы.')
+        await sisu.send_log(message.bot, f"[EMERGENCY] {message.from_user.id} включил аварийный режим!")
+    else:
+        await message.answer('У тебя нет прав для этой команды.')
+
+@router.message(Command('emergency_off'))
+async def emergency_off(message: Message):
+    if message.from_user.id in SUPER_ADMINS:
+        SisuService.set_emergency_mode(False)
+        await message.answer('Аварийный режим выключен! Сису снова с ИИ.')
+        await sisu.send_log(message.bot, f"[EMERGENCY] {message.from_user.id} выключил аварийный режим!")
+    else:
+        await message.answer('У тебя нет прав для этой команды.')
+
+@router.message(Command('admin_help'))
+async def admin_help(message: Message):
+    if message.from_user.id in SUPER_ADMINS:
+        help_text = (
+            "🛡️ <b>Админ-команды Сису</b> 🛡️\n\n"
+            "/emergency_on — включить аварийный режим (только мемы, без ИИ)\n"
+            "/emergency_off — выключить аварийный режим (вернуть ИИ)\n"
+            "/admin_help — эта шпаргалка\n\n"
+            "Все команды доступны только супер-админам!"
+        )
+        try:
+            await message.bot.send_message(message.from_user.id, help_text, parse_mode="HTML")
+            await message.answer('Шпаргалка отправлена в личку!')
+        except Exception:
+            await message.answer('Не удалось отправить шпаргалку в личку. Проверь, что ты писал боту в ЛС.')
+    else:
+        await message.answer('У тебя нет прав для этой команды.')
+
+@router.message()
+async def handle_reply_to_sisu(message: Message):
+    # Проверяем, что это reply на сообщение от Сису
+    if message.reply_to_message and message.reply_to_message.from_user and message.reply_to_message.from_user.id == (await message.bot.me()).id:
+        prev_sisu_text = message.reply_to_message.text
+        user_text = message.text
+        context = [
+            {"role": "assistant", "text": prev_sisu_text},
+            {"role": "user", "text": user_text}
+        ]
+        response = await sisu.get_sisu_response(message.from_user.id, user_text, context, bot=message.bot)
+        await message.answer(response)
+        return
+    # Остальные обработчики работают как раньше 

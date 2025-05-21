@@ -15,6 +15,8 @@ from datetime import datetime
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.types import InputMediaPhoto, InputMediaVideo, InputMediaDocument, InlineKeyboardMarkup, InlineKeyboardButton
+from services.sisu_service import SisuService
+import json
 
 router = Router()
 
@@ -609,4 +611,110 @@ async def unban_user_cmd(message: Message):
         )
         await db.commit()
     await message.answer(f"✅ Пользователь @{username} разбанен.")
-    await log_admin_action(message.from_user.id, "unban", f"@{username}") 
+    await log_admin_action(message.from_user.id, "unban", f"@{username}")
+
+@router.message(Command('emergency_on'))
+async def emergency_on(message: Message):
+    if not is_super_admin(message.from_user.id):
+        await message.answer('У тебя нет прав для этой команды.')
+        return
+    SisuService.set_emergency_mode(True)
+    await message.answer('Аварийный режим включён! Теперь только мемы.')
+    await SisuService().send_log(message.bot, f"[EMERGENCY] {message.from_user.id} включил аварийный режим!")
+
+@router.message(Command('emergency_off'))
+async def emergency_off(message: Message):
+    if not is_super_admin(message.from_user.id):
+        await message.answer('У тебя нет прав для этой команды.')
+        return
+    SisuService.set_emergency_mode(False)
+    await message.answer('Аварийный режим выключен! Сису снова с ИИ.')
+    await SisuService().send_log(message.bot, f"[EMERGENCY] {message.from_user.id} выключил аварийный режим!")
+
+@router.message(Command('admin_help'))
+async def admin_help(message: Message):
+    if not is_super_admin(message.from_user.id):
+        await message.answer('У тебя нет прав для этой команды.')
+        return
+    help_text = (
+        "🛡️ <b>Шпаргалка для супер-админа SisuDatuBot</b> 🛡️\n\n"
+        "<b>⚡️ Аварийный режим</b>\n"
+        "/emergency_on — включить аварийный режим (только мемы, без ИИ)\n"
+        "/emergency_off — выключить аварийный режим (вернуть ИИ)\n\n"
+        "<b>👥 Управление чатами</b>\n"
+        "/allow_chat &lt;chat_id&gt; — разрешить работу бота в чате\n"
+        "/disallow_chat &lt;chat_id&gt; — запретить работу бота в чате\n"
+        "/list_chats — список разрешённых чатов\n\n"
+        "<b>🛠️ Админ-панель и управление</b>\n"
+        "/admin — открыть админ-панель (только в личке)\n"
+        "/broadcast — рассылка всем пользователям\n"
+        "/settask — установить задание дня\n"
+        "/list_users — список пользователей\n"
+        "/addpoints @username amount — начислить баллы\n"
+        "/removepoints @username amount — забрать баллы\n"
+        "/setstreak @username days — установить серию дней\n"
+        "/ban @username — забанить пользователя\n"
+        "/unban @username — разбанить пользователя\n"
+        "/stats — статистика бота\n"
+        "/setsub type url — обновить ссылку подписки\n"
+        "/maintenance on|off — режим обслуживания\n"
+        "/adminlog — последние действия админов\n\n"
+        "<b>ℹ️ Справка</b>\n"
+        "/admin_help — эта шпаргалка в личку"
+    )
+    try:
+        await message.bot.send_message(message.from_user.id, help_text, parse_mode="HTML")
+        await message.answer('Шпаргалка отправлена в личку!')
+    except Exception:
+        await message.answer('Не удалось отправить шпаргалку в личку. Проверь, что ты писал боту в ЛС.')
+
+ALLOWED_CHATS_FILE = "allowed_chats.json"
+
+def load_allowed_chats():
+    try:
+        with open(ALLOWED_CHATS_FILE, "r") as f:
+            return set(json.load(f))
+    except Exception:
+        return set()
+
+def save_allowed_chats(chats):
+    with open(ALLOWED_CHATS_FILE, "w") as f:
+        json.dump(list(chats), f)
+
+@router.message(Command("allow_chat"))
+async def allow_chat_cmd(message: Message):
+    if message.from_user.id not in SUPER_ADMINS:
+        return
+    args = message.text.split()
+    if len(args) != 2:
+        await message.answer("Используй: /allow_chat <chat_id>")
+        return
+    chat_id = int(args[1])
+    allowed = load_allowed_chats()
+    allowed.add(chat_id)
+    save_allowed_chats(allowed)
+    await message.answer(f"✅ Бот теперь активен в чате {chat_id}")
+
+@router.message(Command("disallow_chat"))
+async def disallow_chat_cmd(message: Message):
+    if message.from_user.id not in SUPER_ADMINS:
+        return
+    args = message.text.split()
+    if len(args) != 2:
+        await message.answer("Используй: /disallow_chat <chat_id>")
+        return
+    chat_id = int(args[1])
+    allowed = load_allowed_chats()
+    allowed.discard(chat_id)
+    save_allowed_chats(allowed)
+    await message.answer(f"⛔️ Бот больше не активен в чате {chat_id}")
+
+@router.message(Command("list_chats"))
+async def list_chats_cmd(message: Message):
+    if message.from_user.id not in SUPER_ADMINS:
+        return
+    allowed = load_allowed_chats()
+    if not allowed:
+        await message.answer("Нет разрешённых чатов.")
+    else:
+        await message.answer("Разрешённые чаты:\n" + "\n".join(str(cid) for cid in allowed)) 

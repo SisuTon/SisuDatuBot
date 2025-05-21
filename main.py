@@ -7,6 +7,7 @@ from aiogram.filters import Command
 from config.settings import BOT_TOKEN
 from database.models import init_db
 from handlers import menu, check_in, user, sisu, admin
+from aiogram.types import BotCommand
 
 # Configure logging
 logging.basicConfig(
@@ -31,6 +32,17 @@ dp.include_router(user.router)
 dp.include_router(menu.router)
 dp.include_router(check_in.router)
 dp.include_router(sisu.router)
+
+async def set_commands(bot):
+    commands = [
+        BotCommand(command="start", description="Главное меню"),
+        BotCommand(command="menu", description="Главное меню"),
+        BotCommand(command="profile", description="Ваш профиль"),
+        BotCommand(command="top", description="Топ участников"),
+        BotCommand(command="task", description="Задание дня"),
+        # НЕ добавляем referral, achievements, donate!
+    ]
+    await bot.set_my_commands(commands)
 
 async def main():
     # Initialize database

@@ -5730,3 +5730,175 @@ AttributeError: 'SisuService' object has no attribute 'API_KEY'
 2025-05-22 00:01:36,723 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-22 00:01:36,733 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
 2025-05-22 00:01:36,733 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 00:06:56,012 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 00:06:56,155 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:06:56,356 - aiogram.event - INFO - Update id=436035926 is handled. Duration 153 ms by bot id=7803467562
+2025-05-22 00:06:56,367 - aiogram.event - INFO - Update id=436035925 is handled. Duration 165 ms by bot id=7803467562
+2025-05-22 00:07:02,815 - aiogram.event - INFO - Update id=436035927 is handled. Duration 75 ms by bot id=7803467562
+2025-05-22 00:07:17,984 - aiogram.event - INFO - Update id=436035928 is handled. Duration 164 ms by bot id=7803467562
+2025-05-22 00:07:21,842 - aiogram.event - INFO - Update id=436035929 is handled. Duration 72 ms by bot id=7803467562
+2025-05-22 00:07:24,542 - aiogram.event - INFO - Update id=436035930 is handled. Duration 110 ms by bot id=7803467562
+2025-05-22 00:07:26,396 - aiogram.event - INFO - Update id=436035931 is handled. Duration 68 ms by bot id=7803467562
+2025-05-22 00:07:28,319 - aiogram.event - INFO - Update id=436035932 is handled. Duration 81 ms by bot id=7803467562
+2025-05-22 00:07:29,870 - aiogram.event - INFO - Update id=436035933 is handled. Duration 64 ms by bot id=7803467562
+2025-05-22 00:07:31,608 - aiogram.event - INFO - Update id=436035934 is handled. Duration 62 ms by bot id=7803467562
+2025-05-22 00:07:35,566 - aiogram.event - INFO - Update id=436035935 is handled. Duration 106 ms by bot id=7803467562
+2025-05-22 00:07:38,010 - aiogram.event - INFO - Update id=436035936 is handled. Duration 114 ms by bot id=7803467562
+2025-05-22 00:07:46,681 - aiogram.event - INFO - Update id=436035937 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:07:54,604 - aiogram.event - INFO - Update id=436035938 is handled. Duration 6 ms by bot id=7803467562
+2025-05-22 00:07:59,447 - aiogram.event - INFO - Update id=436035939 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:08:03,109 - aiogram.event - INFO - Update id=436035940 is handled. Duration 74 ms by bot id=7803467562
+2025-05-22 00:10:21,209 - aiogram.event - INFO - Update id=436035941 is handled. Duration 12 ms by bot id=7803467562
+2025-05-22 00:12:08,449 - aiogram.event - INFO - Update id=436035942 is handled. Duration 7 ms by bot id=7803467562
+2025-05-22 00:12:09,484 - aiogram.event - INFO - Update id=436035943 is handled. Duration 1 ms by bot id=7803467562
+2025-05-22 00:12:12,123 - aiogram.event - INFO - Update id=436035944 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 00:12:13,624 - aiogram.event - INFO - Update id=436035945 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:12:27,157 - aiogram.event - INFO - Update id=436035946 is handled. Duration 75 ms by bot id=7803467562
+2025-05-22 00:19:34,002 - aiogram.event - INFO - Update id=436035947 is handled. Duration 565 ms by bot id=7803467562
+2025-05-22 00:19:46,736 - aiogram.event - INFO - Update id=436035948 is handled. Duration 58 ms by bot id=7803467562
+2025-05-22 00:19:51,334 - aiogram.event - INFO - Update id=436035949 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 00:29:23,805 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 00:29:23,817 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:29:23,818 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 00:29:26,256 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 00:29:26,391 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:29:40,902 - aiogram.event - INFO - Update id=436035950 is handled. Duration 181 ms by bot id=7803467562
+2025-05-22 00:29:42,750 - aiogram.event - INFO - Update id=436035951 is handled. Duration 86 ms by bot id=7803467562
+2025-05-22 00:29:54,006 - aiogram.event - INFO - Update id=436035952 is handled. Duration 128 ms by bot id=7803467562
+2025-05-22 00:29:59,707 - aiogram.event - INFO - Update id=436035953 is handled. Duration 59 ms by bot id=7803467562
+2025-05-22 00:30:39,190 - aiogram.event - INFO - Update id=436035954 is handled. Duration 206 ms by bot id=7803467562
+2025-05-22 00:31:00,108 - aiogram.event - INFO - Update id=436035955 is handled. Duration 138 ms by bot id=7803467562
+2025-05-22 00:31:21,034 - aiogram.event - INFO - Update id=436035956 is handled. Duration 139 ms by bot id=7803467562
+2025-05-22 00:31:31,045 - aiogram.event - INFO - Update id=436035957 is handled. Duration 120 ms by bot id=7803467562
+2025-05-22 00:31:41,093 - aiogram.event - INFO - Update id=436035958 is handled. Duration 123 ms by bot id=7803467562
+2025-05-22 00:31:52,949 - aiogram.event - INFO - Update id=436035959 is handled. Duration 161 ms by bot id=7803467562
+2025-05-22 00:36:26,084 - aiogram.event - INFO - Update id=436035960 is handled. Duration 121 ms by bot id=7803467562
+2025-05-22 00:36:28,123 - aiogram.event - INFO - Update id=436035961 is handled. Duration 123 ms by bot id=7803467562
+2025-05-22 00:36:30,441 - aiogram.event - INFO - Update id=436035962 is handled. Duration 191 ms by bot id=7803467562
+2025-05-22 00:36:32,827 - aiogram.event - INFO - Update id=436035963 is handled. Duration 70 ms by bot id=7803467562
+2025-05-22 00:37:34,376 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 00:37:34,381 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:37:34,381 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 00:37:37,655 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 00:37:37,807 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:37:49,431 - aiogram.event - INFO - Update id=436035964 is handled. Duration 249 ms by bot id=7803467562
+2025-05-22 00:38:06,619 - aiogram.event - INFO - Update id=436035965 is handled. Duration 634 ms by bot id=7803467562
+2025-05-22 00:38:17,982 - aiogram.event - INFO - Update id=436035966 is handled. Duration 643 ms by bot id=7803467562
+2025-05-22 00:38:32,494 - aiogram.event - INFO - Update id=436035967 is handled. Duration 734 ms by bot id=7803467562
+2025-05-22 00:39:55,970 - aiogram.event - INFO - Update id=436035968 is handled. Duration 75 ms by bot id=7803467562
+2025-05-22 00:40:01,378 - aiogram.event - INFO - Update id=436035969 is handled. Duration 62 ms by bot id=7803467562
+2025-05-22 00:40:03,366 - aiogram.event - INFO - Update id=436035970 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:40:04,794 - aiogram.event - INFO - Update id=436035971 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:40:05,708 - aiogram.event - INFO - Update id=436035972 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 00:40:07,676 - aiogram.event - INFO - Update id=436035973 is handled. Duration 70 ms by bot id=7803467562
+2025-05-22 00:40:09,384 - aiogram.event - INFO - Update id=436035974 is handled. Duration 70 ms by bot id=7803467562
+2025-05-22 00:40:11,620 - aiogram.event - INFO - Update id=436035975 is handled. Duration 83 ms by bot id=7803467562
+2025-05-22 00:40:16,903 - aiogram.event - INFO - Update id=436035976 is handled. Duration 65 ms by bot id=7803467562
+2025-05-22 00:40:27,615 - aiogram.event - INFO - Update id=436035977 is handled. Duration 72 ms by bot id=7803467562
+2025-05-22 00:42:06,354 - aiogram.event - INFO - Update id=436035978 is handled. Duration 95 ms by bot id=7803467562
+2025-05-22 00:42:08,150 - aiogram.event - INFO - Update id=436035979 is handled. Duration 74 ms by bot id=7803467562
+2025-05-22 00:42:10,284 - aiogram.event - INFO - Update id=436035980 is handled. Duration 259 ms by bot id=7803467562
+2025-05-22 00:42:11,263 - aiogram.event - INFO - Update id=436035981 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:42:12,498 - aiogram.event - INFO - Update id=436035982 is handled. Duration 1 ms by bot id=7803467562
+2025-05-22 00:42:13,896 - aiogram.event - INFO - Update id=436035983 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:42:37,843 - aiogram.event - INFO - Update id=436035984 is handled. Duration 62 ms by bot id=7803467562
+2025-05-22 00:44:56,201 - aiogram.event - INFO - Update id=436035985 is handled. Duration 75 ms by bot id=7803467562
+2025-05-22 00:44:58,775 - aiogram.event - INFO - Update id=436035986 is handled. Duration 67 ms by bot id=7803467562
+2025-05-22 00:44:59,590 - aiogram.event - INFO - Update id=436035987 is handled. Duration 60 ms by bot id=7803467562
+2025-05-22 00:44:59,756 - aiogram.event - INFO - Update id=436035988 is handled. Duration 63 ms by bot id=7803467562
+2025-05-22 00:44:59,914 - aiogram.event - INFO - Update id=436035989 is handled. Duration 62 ms by bot id=7803467562
+2025-05-22 00:45:00,026 - aiogram.event - INFO - Update id=436035990 is handled. Duration 60 ms by bot id=7803467562
+2025-05-22 00:45:00,165 - aiogram.event - INFO - Update id=436035991 is handled. Duration 64 ms by bot id=7803467562
+2025-05-22 00:45:00,470 - aiogram.event - INFO - Update id=436035992 is handled. Duration 90 ms by bot id=7803467562
+2025-05-22 00:53:19,902 - aiogram.event - INFO - Update id=436035993 is handled. Duration 127 ms by bot id=7803467562
+2025-05-22 00:53:23,073 - aiogram.event - INFO - Update id=436035994 is handled. Duration 65 ms by bot id=7803467562
+2025-05-22 00:57:50,465 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 00:57:50,508 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:57:50,512 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 00:57:54,005 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 00:57:54,146 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 00:58:22,302 - aiogram.event - INFO - Update id=436035995 is handled. Duration 220 ms by bot id=7803467562
+2025-05-22 00:58:25,284 - aiogram.event - INFO - Update id=436035996 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:58:26,993 - aiogram.event - INFO - Update id=436035997 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 00:58:28,143 - aiogram.event - INFO - Update id=436035998 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 00:58:41,079 - aiogram.event - INFO - Update id=436035999 is handled. Duration 76 ms by bot id=7803467562
+2025-05-22 00:58:43,314 - aiogram.event - INFO - Update id=436036000 is handled. Duration 67 ms by bot id=7803467562
+2025-05-22 00:58:44,879 - aiogram.event - INFO - Update id=436036001 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 00:58:45,650 - aiogram.event - INFO - Update id=436036002 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:58:46,359 - aiogram.event - INFO - Update id=436036003 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 00:58:47,353 - aiogram.event - INFO - Update id=436036004 is handled. Duration 55 ms by bot id=7803467562
+2025-05-22 00:58:50,177 - aiogram.event - INFO - Update id=436036005 is handled. Duration 62 ms by bot id=7803467562
+2025-05-22 00:58:51,863 - aiogram.event - INFO - Update id=436036006 is handled. Duration 57 ms by bot id=7803467562
+2025-05-22 00:58:52,645 - aiogram.event - INFO - Update id=436036007 is handled. Duration 73 ms by bot id=7803467562
+2025-05-22 00:58:53,379 - aiogram.event - INFO - Update id=436036008 is handled. Duration 69 ms by bot id=7803467562
+2025-05-22 00:58:54,409 - aiogram.event - INFO - Update id=436036009 is handled. Duration 71 ms by bot id=7803467562
+2025-05-22 00:58:55,103 - aiogram.event - INFO - Update id=436036010 is handled. Duration 53 ms by bot id=7803467562
+2025-05-22 00:58:55,627 - aiogram.event - INFO - Update id=436036011 is handled. Duration 64 ms by bot id=7803467562
+2025-05-22 00:58:56,186 - aiogram.event - INFO - Update id=436036012 is handled. Duration 66 ms by bot id=7803467562
+2025-05-22 01:02:04,250 - aiogram.event - INFO - Update id=436036013 is handled. Duration 77 ms by bot id=7803467562
+2025-05-22 01:02:57,430 - aiogram.event - INFO - Update id=436036014 is handled. Duration 69 ms by bot id=7803467562
+2025-05-22 01:02:59,662 - aiogram.event - INFO - Update id=436036015 is handled. Duration 84 ms by bot id=7803467562
+2025-05-22 01:03:12,549 - aiogram.event - INFO - Update id=436036016 is handled. Duration 72 ms by bot id=7803467562
+2025-05-22 01:03:19,053 - aiogram.event - INFO - Update id=436036017 is handled. Duration 73 ms by bot id=7803467562
+2025-05-22 01:03:34,591 - aiogram.event - INFO - Update id=436036018 is handled. Duration 148 ms by bot id=7803467562
+2025-05-22 01:03:37,062 - aiogram.event - INFO - Update id=436036019 is handled. Duration 346 ms by bot id=7803467562
+2025-05-22 01:03:51,092 - aiogram.event - INFO - Update id=436036020 is handled. Duration 57 ms by bot id=7803467562
+2025-05-22 01:03:52,742 - aiogram.event - INFO - Update id=436036021 is handled. Duration 66 ms by bot id=7803467562
+2025-05-22 01:03:53,526 - aiogram.event - INFO - Update id=436036022 is handled. Duration 64 ms by bot id=7803467562
+2025-05-22 01:03:56,495 - aiogram.event - INFO - Update id=436036023 is handled. Duration 87 ms by bot id=7803467562
+2025-05-22 01:03:57,575 - aiogram.event - INFO - Update id=436036024 is handled. Duration 59 ms by bot id=7803467562
+2025-05-22 01:03:58,762 - aiogram.event - INFO - Update id=436036025 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:04:00,195 - aiogram.event - INFO - Update id=436036026 is handled. Duration 56 ms by bot id=7803467562
+2025-05-22 01:04:03,473 - aiogram.event - INFO - Update id=436036027 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 01:04:04,703 - aiogram.event - INFO - Update id=436036028 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 01:04:05,654 - aiogram.event - INFO - Update id=436036029 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 01:07:17,029 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 01:07:17,039 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 01:07:17,041 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 01:07:19,338 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 01:07:19,490 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 01:07:35,038 - aiogram.event - INFO - Update id=436036030 is handled. Duration 5 ms by bot id=7803467562
+2025-05-22 01:07:43,837 - aiogram.event - INFO - Update id=436036031 is handled. Duration 226 ms by bot id=7803467562
+2025-05-22 01:07:46,313 - aiogram.event - INFO - Update id=436036032 is handled. Duration 66 ms by bot id=7803467562
+2025-05-22 01:08:03,308 - aiogram.event - INFO - Update id=436036033 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:08:05,930 - aiogram.event - INFO - Update id=436036034 is handled. Duration 94 ms by bot id=7803467562
+2025-05-22 01:08:19,142 - aiogram.event - INFO - Update id=436036035 is handled. Duration 99 ms by bot id=7803467562
+2025-05-22 01:08:22,070 - aiogram.event - INFO - Update id=436036036 is handled. Duration 58 ms by bot id=7803467562
+2025-05-22 01:08:24,006 - aiogram.event - INFO - Update id=436036037 is handled. Duration 4 ms by bot id=7803467562
+2025-05-22 01:08:25,745 - aiogram.event - INFO - Update id=436036038 is handled. Duration 90 ms by bot id=7803467562
+2025-05-22 01:08:26,668 - aiogram.event - INFO - Update id=436036039 is handled. Duration 108 ms by bot id=7803467562
+2025-05-22 01:08:27,515 - aiogram.event - INFO - Update id=436036040 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:08:28,038 - aiogram.event - INFO - Update id=436036041 is handled. Duration 57 ms by bot id=7803467562
+2025-05-22 01:08:28,975 - aiogram.event - INFO - Update id=436036042 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:08:29,663 - aiogram.event - INFO - Update id=436036043 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:08:30,203 - aiogram.event - INFO - Update id=436036044 is handled. Duration 61 ms by bot id=7803467562
+2025-05-22 01:08:31,781 - aiogram.event - INFO - Update id=436036045 is handled. Duration 57 ms by bot id=7803467562
+2025-05-22 01:08:32,440 - aiogram.event - INFO - Update id=436036046 is handled. Duration 63 ms by bot id=7803467562
+2025-05-22 01:12:37,810 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 01:12:37,830 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 01:12:37,830 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-22 01:12:40,018 - aiogram.dispatcher - INFO - Start polling
+2025-05-22 01:12:40,162 - aiogram.dispatcher - INFO - Run polling for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 01:12:44,935 - aiogram.event - INFO - Update id=436036047 is handled. Duration 147 ms by bot id=7803467562
+2025-05-22 01:12:48,094 - aiogram.event - INFO - Update id=436036048 is handled. Duration 83 ms by bot id=7803467562
+2025-05-22 01:12:55,104 - aiogram.event - INFO - Update id=436036049 is handled. Duration 63 ms by bot id=7803467562
+2025-05-22 01:12:56,392 - aiogram.event - INFO - Update id=436036050 is handled. Duration 107 ms by bot id=7803467562
+2025-05-22 01:12:57,964 - aiogram.event - INFO - Update id=436036051 is handled. Duration 56 ms by bot id=7803467562
+2025-05-22 01:12:59,405 - aiogram.event - INFO - Update id=436036052 is handled. Duration 59 ms by bot id=7803467562
+2025-05-22 01:13:00,699 - aiogram.event - INFO - Update id=436036053 is handled. Duration 56 ms by bot id=7803467562
+2025-05-22 01:13:07,618 - aiogram.event - INFO - Update id=436036054 is handled. Duration 66 ms by bot id=7803467562
+2025-05-22 01:13:09,268 - aiogram.event - INFO - Update id=436036055 is handled. Duration 68 ms by bot id=7803467562
+2025-05-22 01:13:11,098 - aiogram.event - INFO - Update id=436036056 is handled. Duration 57 ms by bot id=7803467562
+2025-05-22 01:13:12,444 - aiogram.event - INFO - Update id=436036057 is handled. Duration 103 ms by bot id=7803467562
+2025-05-22 01:26:47,267 - aiogram.event - INFO - Update id=436036058 is handled. Duration 67 ms by bot id=7803467562
+2025-05-22 01:26:49,058 - aiogram.event - INFO - Update id=436036059 is handled. Duration 58 ms by bot id=7803467562
+2025-05-22 01:41:46,567 - aiogram.event - INFO - Update id=436036060 is handled. Duration 21 ms by bot id=7803467562
+2025-05-22 01:41:49,309 - aiogram.event - INFO - Update id=436036061 is handled. Duration 22 ms by bot id=7803467562
+2025-05-22 01:41:53,891 - aiogram.event - INFO - Update id=436036062 is handled. Duration 2 ms by bot id=7803467562
+2025-05-22 01:42:02,619 - aiogram.event - INFO - Update id=436036063 is handled. Duration 1017 ms by bot id=7803467562
+2025-05-22 01:42:22,574 - aiogram.event - INFO - Update id=436036064 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 01:42:33,715 - aiogram.event - INFO - Update id=436036065 is handled. Duration 771 ms by bot id=7803467562
+2025-05-22 01:42:46,656 - aiogram.event - INFO - Update id=436036066 is handled. Duration 3 ms by bot id=7803467562
+2025-05-22 01:50:18,915 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-22 01:50:18,933 - aiogram.dispatcher - INFO - Polling stopped for bot @SisuDatuBot id=7803467562 - 'Sisu'
+2025-05-22 01:50:18,935 - aiogram.dispatcher - INFO - Polling stopped
